@@ -6,14 +6,11 @@
 ### Bundle Client
 #### General
 - speciality (term)
-- voice_position (term)
 - function (term)
 - position (term)
-- instrument (term)
 - is_active (bool)
 - entry (date)
 - resigning (date)
-- historical (bool) depricated
 
 #### Personal
  - images
@@ -43,18 +40,16 @@
 
 ### Bundle roles
  - name
- - artist (ref)
+ - client (ref)
  - event_solo (ref)
  - description
 
 ### Bundle Client Group
  - name
- - artists (ref)
+ - client (ref)
  - description
 
 ### Vocabularies
- - voice_position
- - instrument
  - function
  - position
  - speciality

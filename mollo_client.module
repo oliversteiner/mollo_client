@@ -37,7 +37,7 @@ function mollo_client_theme() {
 
 function mollo_client_form_alter(&$form, &$form_state, $form_id) {
 
-  if ($form['#id'] === 'views-exposed-form-mollo-artist-roles-admin-list'
+  if ($form['#id'] === 'views-exposed-form-mollo-client-roles-admin-list'
 
   ) {
 

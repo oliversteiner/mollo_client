@@ -4,15 +4,15 @@
 mollo_client.main:
   title: 'Client'
   description: 'Show all Roles'
-  route_name: mollo_client.artist.list
+  route_name: mollo_client.client.list
   parent: 'system.admin_content'
 #
 # Content > Client > Clients
 #
-mollo_client.artist:
+mollo_client.client:
   title: 'Clients'
   description: 'Show all Roles'
-  route_name: mollo_client.artist.list
+  route_name: mollo_client.client.list
   parent: 'mollo_client.main'
 
 #
