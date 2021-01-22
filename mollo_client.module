@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains mollo_client.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\mollo_utils\Utility\ViewFilter;
+
+/**
+ * Implements hook_help().
+ */
+function mollo_client_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mollo_client module.
+    case 'help.page.mollo_client':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Client Module for Mollo Events') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mollo_client_theme() {
+  return [
+    'mollo_client' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function mollo_client_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form['#id'] === 'views-exposed-form-mollo-artist-roles-admin-list'
+
+  ) {
+
+    $form = ViewFilter::filter_mollo_event($form);
+
+  }
+
+}

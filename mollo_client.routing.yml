@@ -1,0 +1,18 @@
+#
+# View Clients
+#
+mollo_client.artist.list:
+  path: '/admin/artist/list'
+  defaults:
+    _title: 'Clients'
+  requirements:
+    _permission: 'administer content'
+#
+# View Group
+#
+mollo_client.group.list:
+  path: '/admin/artist-group/list'
+  defaults:
+    _title: 'Client Groups'
+  requirements:
+    _permission: 'administer content'

@@ -1,0 +1,9 @@
+mollo_client.main:
+  css:
+    theme:
+      assets/css/mollo_client.css: {}
+  js:
+    assets/js/mollo_client.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
